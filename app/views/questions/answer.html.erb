@@ -1,8 +1,14 @@
-<%= params[:answer].capitalize %>
-<br>
-<br>
-<%= @answer %>
-<br>
-<br>
-
+<h1>Stupid Coaching</h1>
+<blockquote>
+  <p>
+    <%= params[:question].capitalize %>
+  </p>
+  <cite>You</cite>
+</blockquote>
+<blockquote class="coach">
+  <p>
+    <%= @answer %>
+  </p>
+  <cite>Your coach</cite>
+</blockquote>
 <%= link_to "Ask a new question", ask_path %>
